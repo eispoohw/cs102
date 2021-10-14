@@ -1,10 +1,8 @@
-from bottle import (
-    route, run, template, request, redirect
-)
-
+from bottle import redirect, request, route, run, template
 from scrapper import get_news
-from db import News, session
+
 from bayes import NaiveBayesClassifier
+from db import News, session
 
 
 @route("/news")
